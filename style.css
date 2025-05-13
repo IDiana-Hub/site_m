@@ -12,19 +12,11 @@ body {
   justify-content: space-between;
   padding: 1rem;
 }
-a.skip {
-  align-self: flex-end;
-  color: #8A8FB9;
-  text-decoration: none;
-  font-size: 0.9rem;
-  margin-bottom: 1rem;
-}
 .hero {
   text-align: center;
-  max-width: 350px;
   padding-bottom: 20px;
   font-size: x-large;
-   color: white;
+  color: white;
 }
 .neon-frame {
     position: relative;
