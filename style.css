@@ -197,6 +197,7 @@ body {
   transition: opacity 0.3s;
   width: 180px;
   text-align: center;
+  border: none;
 }
 .btn-trial:hover { opacity: 0.9; }
 .footer-links {
@@ -209,4 +210,90 @@ body {
 .footer-links a {
   color: inherit;
   text-decoration: none;
+}
+
+
+/* Стиль для заголовка сторінки */
+header h1 {
+  text-align: center;
+  font-size: 3rem; /* Дуже великий шрифт для мобільних */
+  margin: 20px 0;
+  background: linear-gradient(90deg, #8550ff, #ff0000);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* Для підтримки інших браузерів */
+  color: transparent; /* Забезпечує прозорість кольору */
+}
+
+/* Кнопки під заголовком */
+.button-container {
+  display: flex;
+  gap: 10px; /* Відступи між кнопками */
+  margin-top: 10px;
+}
+
+/* Контентний блок */
+.content {
+  background-color: #ffffff; /* Білий фон */
+  color: #000000; /* Чорний текст для контрасту */
+  border-radius: 15px; /* Круглі краї */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px; /* Ширина для десктопів */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Легка тінь */
+}
+
+/* Текст усередині контенту */
+.content h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Ссилки */
+a {
+  color: #007bff; /* Синій відтінок для посилань */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Стилі для футера */
+footer {
+  text-align: center;
+  padding: 10px;
+  color: #ffffff;
+}
+
+/* Адаптація для планшетів */
+@media (min-width: 768px) {
+  header h1 {
+    font-size: 4rem; /* Збільшуємо заголовок */
+  }
+
+  .content {
+    padding: 30px;
+  }
+
+  .content p {
+    font-size: 1.2rem;
+  }
+}
+
+/* Адаптація для десктопів */
+@media (min-width: 1024px) {
+  header h1 {
+    font-size: 5rem; /* Ще більший заголовок */
+  }
+
+  .content {
+    max-width: 900px;
+  }
 }
