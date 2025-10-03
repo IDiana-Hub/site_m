@@ -186,7 +186,10 @@ body {
   color: #AAAAAA;
 }
 .btn-trial {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
   background: linear-gradient(90deg, #6C5DD3 0%, #8A8FB9 100%);
   color: #FFF;
   text-decoration: none;
@@ -206,6 +209,11 @@ body {
   font-size: 0.8rem;
   color: #6C5DD3;
   margin-bottom: 0.5rem;
+}
+.btn-trial svg {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
 }
 .footer-links a {
   color: inherit;
